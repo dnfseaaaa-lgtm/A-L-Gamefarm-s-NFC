@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NFC Digital Card</title>
+
+    <link rel="stylesheet" href="design.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =================================
+         OPTIONAL VIDEO BACKGROUND
+    ================================== -->
+
+    <!--
+    <video class="background-video"
+           autoplay
+           muted
+           loop
+           playsinline>
+
+        <source src="background.mp4"
+                type="video/mp4">
+
+    </video>
+    -->
+
+
+    <!-- BACKGROUND OVERLAY -->
+
+    <div class="background-overlay"></div>
+
+
+    <!-- =================================
+         MAIN MOBILE CARD
+    ================================== -->
+
+    <main class="mobile">
+
+        <!-- PROFILE -->
+
+        <section class="profile">
+
+            <img src="pf.png"
+                 alt="Profile Picture"
+                 class="profile-picture">
+
+            <h1>
+                Vhon Daryl Creencia
+                (Alex and Leo Gamefarm)
+            </h1>
+
+            <p class="subtitle"></p>
+
+        </section>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+            <!-- ABOUT -->
+
+            <div class="about">
+
+                <h2>
+                    LARGA NA!🐔
+                </h2>
+
+                <p>
+                    
+                    Home of A&L Sweaters, A&L Dome, and A&L White.
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 CONTACT / SOCIAL LINKS
+            ================================== -->
+
+            <div class="links">
+
+                 <!-- PHONE -->
+                <a href="tel:09485298339"
+                   class="button">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+                        Contact Me
+                    </span>
+
+                </a>
+
+                <!-- EMAIL -->
+
+                <a href="mailto:creenciabrenda@gmail.com"
+                   class="button">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>Email</span>
+
+                </a>
+
+
+                <!-- FACEBOOK -->
+
+                <a href="https://www.facebook.com/Vhon.Creencia"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="button">
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                    <span>Facebook</span>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a href="https://www.instagram.com/vhonnnieee_cre/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="button">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <span>Instagram</span>
+
+                </a>
+
+
+                <!-- =================================
+                     PAYMENT QR FOLDER
+                ================================== -->
+
+                <a href="#payments"
+                   class="button">
+
+                    <i class="fa-solid fa-qrcode"></i>
+
+                    <span>Payment QR Codes</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            Tap • Connect • Share
+        </footer>
+
+    </main>
+
+
+    <!-- =================================
+         PAYMENT QR FOLDER
+    ================================== -->
+
+    <div id="payments" class="qr-modal">
+
+        <div class="qr-box payment-folder">
+
+            <a href="#"
+               class="qr-close"
+               aria-label="Close">&times;</a>
+
+            <h2>
+                <i class="fa-solid fa-folder-open"></i>
+                Payment QR Codes
+            </h2>
+
+            <p>
+                Choose a payment method
+            </p>
+
+
+            <!-- GCASH -->
+
+            <a href="#gcash"
+               class="payment-option">
+
+                <i class="fa-solid fa-money-bill-transfer"></i>
+
+                <span>GCash</span>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </a>
+
+
+
+
+            <!-- BPI -->
+
+            <a href="#bpi"
+               class="payment-option">
+
+                <i class="fa-solid fa-building-columns"></i>
+
+                <span>BPI</span>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </a>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         GCASH QR POPUP
+    ================================== -->
+
+    <div id="gcash" class="qr-modal">
+
+        <div class="qr-box">
+
+            <a href="#payments"
+               class="qr-close"
+               aria-label="Close">&times;</a>
+
+            <h2>GCash QR Code</h2>
+
+            <p>Scan to send payment</p>
+
+            <img src="gcash-qr.png"
+                 alt="GCash QR Code"
+                 class="gcash-qr">
+
+            <p class="gcash-name">
+                Vhon Daryl Creencia
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         MAYA QR POPUP
+    ================================== -->
+
+
+
+    <!-- =================================
+         RCBC QR POPUP
+    ================================== -->
+
+    <div id="rcbc" class="qr-modal">
+
+        <div class="qr-box">
+
+            <a href="#payments"
+               class="qr-close"
+               aria-label="Close">&times;</a>
+
+            <h2>RCBC QR Code</h2>
+
+            <p>Scan to send payment</p>
+
+            <img src="rcbc-qr.png"
+                 alt="RCBC QR Code"
+                 class="gcash-qr">
+
+            <p class="gcash-name">
+                Van Allen Poblete
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         BPI QR POPUP
+    ================================== -->
+
+    <div id="bpi" class="qr-modal">
+
+        <div class="qr-box">
+
+            <a href="#payments"
+               class="qr-close"
+               aria-label="Close">&times;</a>
+
+            <h2>BPI QR Code</h2>
+
+            <p>Scan to send payment</p>
+
+            <img src="bpi-qr.png"
+                 alt="BPI QR Code"
+                 class="gcash-qr">
+
+            <p class="gcash-name">
+                Van Allen Poblete
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================
+         CIMB QR POPUP
+    ================================== -->
+
+    <div id="cimb" class="qr-modal">
+
+        <div class="qr-box">
+
+            <a href="#payments"
+               class="qr-close"
+               aria-label="Close">&times;</a>
+
+            <h2>CIMB QR Code</h2>
+
+            <p>Scan to send payment</p>
+
+            <img src="cimb-qr.png"
+                 alt="CIMB QR Code"
+                 class="gcash-qr">
+
+            <p class="gcash-name">
+                Van Allen Poblete
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
